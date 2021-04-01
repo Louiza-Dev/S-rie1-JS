@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/louiza/Bureau/HTML/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Exo6</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+          <h2>Mon Exo6 J-S</h2>
+          <form class="" action="index.html" method="post">
+            <p><input type="text" id="num" name="age" value=""></p>
+            <p><button onclick="produitNum()">Entrer</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    function produitNum(){
+      var number1 = document.getElementById('num').value;
+      if (isNaN(number1)){
+        alert('Veuiller introduire un chifre svp.');
+      } else if (number1 <= 18){
+        alert('Vous êtes mineur ');
+      } else {
+      alert('Vous êtes majeur')
+      }
+    }
+    </script>
+
+  </body>
+</html>

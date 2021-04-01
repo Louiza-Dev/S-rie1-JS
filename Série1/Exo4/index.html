@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/louiza/Bureau/HTML/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Exo4</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+          <h2>Mon Exo4 J-S</h2>
+            <form class="" action="index.html" method="post">
+              <input type="text" id="nom" placeholder="Nom" value="" required>
+              <input type="text" id="prénom" placeholder="Prénom" value="" required>
+              <input type="text" id="ville" placeholder="Ville" value="" required>
+              <!-- attacher ma fonction a mon botton -->
+              <p><button onclick="displayInput()">ok</button></p>
+            </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //crée une fonction qui me permet de recupéré et d'afficher
+      //mes valeur input dans mes input
+      function displayInput(){
+        var inputName = document.getElementById('nom').value;
+        var inputUsername = document.getElementById('prénom').value;
+        var inputCity = document.getElementById('ville').value;
+        if (isNaN(inputName) && isNaN(inputUsername) && isNaN(inputCity)){
+          alert('Votre Nom est : ' + inputName + '\n' + 'Votre prénom est : ' + inputUsername + '\n' + 'Votre ville est : ' + inputCity);
+          } else {
+          alert('Veuillez remplir les champs correctement');
+        }
+      }
+    </script>
+<!-- (isNaN(inputName) && isNaN(inputUsername) && isNaN(inputCity)) -->
+<!-- (inputName && inputUsername && inputCity) -->
+  </body>
+</html>
